@@ -1,0 +1,20 @@
+public static class DummyMapper
+extends Mapper<Object, Text, Text, Text>{
+	
+	@Override
+	protected void map(Object key, Text value, Mapper<Object, Text, Text, Text>.Context context)
+			throws IOException, InterruptedException {
+	}
+}
+
+public static class DummyReducer
+	extends Reducer<Text, Text, Text, Text> {
+		
+	@Override
+	protected void reduce(Text key, Iterable<Text> values, Reducer<Text, Text, Text, Text>.Context context)
+			throws IOException, InterruptedException {
+	}
+}
+	
+	
+	
